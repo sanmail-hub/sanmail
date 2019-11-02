@@ -1,0 +1,10 @@
+//aqui se alojara el listado de stikers
+{
+"stikers":[
+    "mailbear":{
+    "name":"Oso del correo",
+    "logo":"logo.png"//dentro de la carpeta mailbear
+    //los stikers estaran alojados en la carpeta mailbear y listados 
+    }
+]
+}
