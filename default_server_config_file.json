@@ -1,0 +1,168 @@
+//#!json
+{
+  "defined":[
+    "nauta.cu",
+    "gmail.com", "google.mail.com",
+    "hotmail.com",
+    "outlock.com", "live.com",
+    "uho.edu.cu",
+    "sanmail.app"
+  ],
+
+  "nauta.cu":{
+    "incoming_provider": "imap", //0 = imap,  0 = pop
+    "incoming_host":"imap.nauta.cu",
+    "incoming_port": 143,
+    "incoming_user": true, //true = full user (user@dom), false just user (user)!@dom
+    "CONFIG_KEY_IN_SEC": 2, //0 = none, 1 = ssl/tls, 2 = startsls
+    "CONFIG_KEY_IN_ACEPT_CERT": true,
+
+    "outgoing_host":"smtp.nauta.cu",
+    "outgoing_port": 25,
+    "CONFIG_KEY_OUT_SEC": 2, //0 = none, 1 = ssl/tls, 2 = startsls
+    "CONFIG_KEY_OUT_AUTH": true, //need smtp user
+    "outgoing_user": true, //true = full user (user@dom), false just user (user)!@dom
+    "CONFIG_KEY_OUT_ACEPT_CERT": true
+  },
+
+
+  //if not found try to set with those
+  //IMAP
+  //mantener el estandar para usar los trys como dominios al no encontrar uno
+  "trys":8,
+  "try1":{
+    "incoming_provider": "imap", //0 = imap,  0 = pop
+    "incoming_host":"imap.#", //# replaced by domain
+    "incoming_port": 143,
+    "CONFIG_KEY_IN_SEC": 0, //0 = none, 1 = ssl/tls, 2 = startsls
+    "incoming_user": true, //true = full user (user@dom), false just user (user)!@dom
+    "CONFIG_KEY_IN_ACEPT_CERT": false,
+
+    "outgoing_host":"smtp.#", //# replaced by domain
+    "outgoing_port": 25,
+    "CONFIG_KEY_OUT_SEC": 0, //0 = none, 1 = ssl/tls, 2 = startsls
+    "CONFIG_KEY_OUT_AUTH": true, //need smtp user
+    "outgoing_user": true, //true = full user (user@dom), false just user (user)!@dom
+    "CONFIG_KEY_OUT_ACEPT_CERT": false
+  },
+  "try2":{
+    "incoming_provider": "imap", //0 = imap,  0 = pop
+    "incoming_host":"imap.#", //# replaced by domain
+    "incoming_port": 143,
+    "CONFIG_KEY_IN_SEC": 2, //0 = none, 1 = ssl/tls, 2 = startsls
+    "incoming_user": true, //true = full user (user@dom), false just user (user)!@dom
+    "CONFIG_KEY_IN_ACEPT_CERT": false,
+
+    "outgoing_host":"smtp.#", //# replaced by domain
+    "outgoing_port": 25,
+    "CONFIG_KEY_OUT_SEC": 2, //0 = none, 1 = ssl/tls, 2 = startsls
+    "CONFIG_KEY_OUT_AUTH": true, //need smtp user
+    "outgoing_user": true, //true = full user (user@dom), false just user (user)!@dom
+    "CONFIG_KEY_OUT_ACEPT_CERT": false
+  },
+  "try3":{
+    "incoming_provider": "imap", //0 = imap,  0 = pop
+    "incoming_host":"imap.#", //# replaced by domain
+    "incoming_port": 143,
+    "CONFIG_KEY_IN_SEC": 0, //0 = none, 1 = ssl/tls, 2 = startsls
+    "incoming_user": false, //true = full user (user@dom), false just user (user)!@dom
+    "CONFIG_KEY_IN_ACEPT_CERT": false,
+
+    "outgoing_host":"smtp.#", //# replaced by domain
+    "outgoing_port": 25,
+    "CONFIG_KEY_OUT_SEC": 0, //0 = none, 1 = ssl/tls, 2 = startsls
+    "CONFIG_KEY_OUT_AUTH": true, //need smtp user
+    "outgoing_user": false, //true = full user (user@dom), false just user (user)!@dom
+    "CONFIG_KEY_OUT_ACEPT_CERT": false
+  },
+  "try4":{
+    "incoming_provider": "imap", //0 = imap,  0 = pop
+    "incoming_host":"imap.#", //# replaced by domain
+    "incoming_port": 143,
+    "CONFIG_KEY_IN_SEC": 2, //0 = none, 1 = ssl/tls, 2 = startsls
+    "incoming_user": false, //true = full user (user@dom), false just user (user)!@dom
+    "CONFIG_KEY_IN_ACEPT_CERT": false,
+
+    "outgoing_host":"smtp.#", //# replaced by domain
+    "outgoing_port": 25,
+    "CONFIG_KEY_OUT_SEC": 2, //0 = none, 1 = ssl/tls, 2 = startsls
+    "CONFIG_KEY_OUT_AUTH": true, //need smtp user
+    "outgoing_user": true, //true = full user (user@dom), false just user (user)!@dom
+    "CONFIG_KEY_OUT_ACEPT_CERT": false
+  },
+  //POP
+  "try5":{
+    "incoming_provider": "pop", //0 = imap,  0 = pop
+    "incoming_host":"pop.#", //# replaced by domain
+    "incoming_port": 110,
+    "CONFIG_KEY_IN_SEC": 0, //0 = none, 1 = ssl/tls, 2 = startsls
+    "incoming_user": true, //true = full user (user@dom), false just user (user)!@dom
+    "CONFIG_KEY_IN_ACEPT_CERT": false,
+
+    "outgoing_host":"smtp.#", //# replaced by domain
+    "outgoing_port": 25,
+    "CONFIG_KEY_OUT_SEC": 0, //0 = none, 1 = ssl/tls, 2 = startsls
+    "CONFIG_KEY_OUT_AUTH": true, //need smtp user
+    "outgoing_user": true, //true = full user (user@dom), false just user (user)!@dom
+    "CONFIG_KEY_OUT_ACEPT_CERT": false
+  },
+  "try6":{
+    "incoming_provider": "pop", //0 = imap,  0 = pop
+    "incoming_host":"pop.#", //# replaced by domain
+    "incoming_port": 110,
+    "CONFIG_KEY_IN_SEC": 2, //0 = none, 1 = ssl/tls, 2 = startsls
+    "incoming_user": true, //true = full user (user@dom), false just user (user)!@dom
+    "CONFIG_KEY_IN_ACEPT_CERT": false,
+
+    "outgoing_host":"smtp.#", //# replaced by domain
+    "outgoing_port": 25,
+    "CONFIG_KEY_OUT_SEC": 2, //0 = none, 1 = ssl/tls, 2 = startsls
+    "CONFIG_KEY_OUT_AUTH": true, //need smtp user
+    "outgoing_user": true, //true = full user (user@dom), false just user (user)!@dom
+    "CONFIG_KEY_OUT_ACEPT_CERT": false
+  },
+  "try7":{
+    "incoming_provider": "pop", //0 = imap,  0 = pop
+    "incoming_host":"pop.#", //# replaced by domain
+    "incoming_port": 110,
+    "CONFIG_KEY_IN_SEC": 0, //0 = none, 1 = ssl/tls, 2 = startsls
+    "incoming_user": false, //true = full user (user@dom), false just user (user)!@dom
+    "CONFIG_KEY_IN_ACEPT_CERT": false,
+
+    "outgoing_host":"smtp.#", //# replaced by domain
+    "outgoing_port": 25,
+    "CONFIG_KEY_OUT_SEC": 0, //0 = none, 1 = ssl/tls, 2 = startsls
+    "CONFIG_KEY_OUT_AUTH": true, //need smtp user
+    "outgoing_user": false, //true = full user (user@dom), false just user (user)!@dom
+    "CONFIG_KEY_OUT_ACEPT_CERT": false
+  },
+  "try8":{
+    "incoming_provider": "pop", //0 = imap,  0 = pop
+    "incoming_host":"pop.#", //# replaced by domain
+    "incoming_port": 110,
+    "CONFIG_KEY_IN_SEC": 2, //0 = none, 1 = ssl/tls, 2 = startsls
+    "incoming_user": false, //true = full user (user@dom), false just user (user)!@dom
+    "CONFIG_KEY_IN_ACEPT_CERT": false,
+
+    "outgoing_host":"smtp.#", //# replaced by domain
+    "outgoing_port": 25,
+    "CONFIG_KEY_OUT_SEC": 2, //0 = none, 1 = ssl/tls, 2 = startsls
+    "CONFIG_KEY_OUT_AUTH": true, //need smtp user
+    "outgoing_user": true, //true = full user (user@dom), false just user (user)!@dom
+    "CONFIG_KEY_OUT_ACEPT_CERT": false
+  },
+
+  "socials":[
+    {
+      //mail to alias
+      "notification324324@facebookmail.com": "Facebook",
+      "notification32546m4@facebookmail.com": "Facebook",
+
+      ////definition of alias
+      "Facebook":["notification@facebook.com","http://path.to.logo./on/web.img"]
+    }
+
+  ]
+
+
+}
