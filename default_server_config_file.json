@@ -1,6 +1,6 @@
 //#!json
 {
-  "defined":[
+  "defined":[//for autocompletion on initial configuration
     "nauta.cu",
     "gmail.com", "google.mail.com",
     "hotmail.com",
