@@ -1,4 +1,659 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-</resources>
+    <string name="btn_prev">Volver</string>
+    <string name="btn_next">Continuar</string>
+    <string name="app_name" translatable="false">SanMail²</string>
+    <string name="in">en $N$ $U$</string>
+    <string name="ago">hace $N$ $U$</string>
+    <string name="lessMinut">un seg</string>
+    <string name="days">días</string>
+    <string name="regards">\nAgradecimientos a todas las personas que han contribuido con el proyecto de una manera u otra, ya sea por sus valoraciones, contribuciones o simplemente por la propagación persona a persona de la aplicación. Sabemos lo difícil que puede ser promover algo novedoso.
+En especial a todos por las colaboraciones realizadas. \n\n Iconos gracias a http://flaticon.com \n Traducciones:\n Ingles: Hugo Florentino https://t.me/geekmidget</string>
+    <string name="about_text">\nCon SanMail puedes mantener tus correos ordenados y agrupados en conversaciones como si fuera un cliente de mensajería haciendo que tu experiencia sea más grata con los servicios tradicionales de correo.\n
+\nCuenta con una interfaz limpia e intuitiva en la que puedes mantener una comunicación fluida con tus amigos como si lo hicieras por alguno de los clientes de mensajería habituales como Whatsapp, Hangout o Messenger.\n
+\nEn su desarrollo se pone énfasis en la libertad, seguridad y privacidad de los datos enviados, recibidos o guardados por el usuario, no siendo necesario registrarse en ningún otro servidor que no sea en el que posee su cuenta de correos, los cuales envía directamente al destinatario. Por lo tanto, no deja copias en servidores de terceros. </string>
+    <string name="action_delete">Eliminar</string>
+    <string name="action_update">Actualizar</string>
+    <string name="canceled">Cancelado por el usuario</string>
+    <string name="prompt_email">Escribe tu correo</string>
+    <string name="prompt_password">Escribe tu contraseña</string>
+    <string name="text_email">Correo</string>
+    <string name="text_messsage_hint">Mensaje </string>
+    <string name="sendButton">Enviar</string>
+    <string name="prompUser">Nombre del usuario</string>
+    <string name="prompProvider">Proveedor</string>
+    <string name="pref_header_notifications">Notificaciones</string>
+    <string name="port">Puerto</string>
+    <string name="error_unknown">Error desconocido</string>
+    <string name="error_invalid_email">La dirección de correo no es válida</string>
+    <string name="action_subject">Asunto</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_details">Detalles</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_about">Acerca </string>
+    <string name="action_as_read">Marcar como leido</string>
+    <string name="action_compose">Redactar</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="action_resend">Reenviar</string>
+    <string name="action_search">Buscar </string>
+    <string name="action_sign_in_short">Iniciar</string>
+    <string name="error_field_required">No puedes dejarlo vacío</string>
+    <string name="error_incorrect_password">Autenticación fallida. Compruebe usuario y contraseña.</string>
+    <string name="error_server_no_such_provider">Error de conexión con el protocolo del proveedor.</string>
+    <string name="error_server_unreachable">No se pudo conectar con el servidor. Comprueba tu conexión</string>
+    <string name="selectProvider">Seleccione el proveedor</string>
+    <string name="textCheckingAuto">Configurando servidores automáticamente\n Puede tomar algunos minutos</string>
+    <string name="textCheckingInConfig">Comprobando configuración de servidor de entrada\n Puede tomar algunos minutos</string>
+    <string name="textCheckingOutConfig">Comprobando configuración de servidor de salida\n Puede tomar algunos minutos</string>
+    <string name="textIncomingHost">Servidor de entrada</string>
+    <string name="textOutgoingHOst">Servidor de salida</string>
+    <string name="title_activity_compose">Enviar</string>
+    <string name="title_activity_settings">Ajustes</string>
+    <string name="unknown_contact">Contacto desconocido</string>
+    <string name="unknown_mail">Correo desconocido</string>
+    <string name="updateServersSettings">Editar cuenta</string>
+    <string name="updateing_text">Sincronizando</string>
+    <string name="host">Servidor</string>
+    <string name="manualConfig">Ajuste manual</string>
+    <string name="error_settings">Errores de configuración</string>
+    <string name="pref_title_display_name">Nombre</string>
+    <string name="donate">Hacer donación</string>
 
+    <string name="action_save">Guardar</string>
+    <string name="action_show_quotes">Mostrar texto citado</string>
+    <string name="quote_replacements"><![CDATA[<i><b>&#60;texto citado oculto&#62;</i></b>]]></string>
+    <string name="ask_delete_all_mails_from">¿Quieres eliminar la conversación?</string>
+    <string name="ask_delete_mail">¿Quieres eliminar este correo?</string>
+    <string name="setting_hide_quotes">Mostrar texto citado como chat</string>
+    <string name="hide_quoted_text_explain">Muestra una burbuja para denotar el texto respondido en correos tradicionales</string>
+    <string name="pref_personal_data">Datos Personales</string>
+    <string name="pref_server_config">Servidores y sincronización</string>
+
+    <string name="pref_header_data_sync">Recibo y descarga</string>
+    <string name="pref_title_sync_frequency">Sincronización automática</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>minutos</item>
+        <item>horas</item>
+        <item>días</item>
+        <item>semanas</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_titles1">
+        <item>segundos</item>
+        <item>minutos</item>
+        <item>horas</item>
+        <item>días</item>
+        <item>semanas</item>
+    </string-array>
+    <string name="pref_appareance">Apariencia</string>
+    <string name="autodownload_attachments">Limitar tamaño para descarga automática</string>
+    <string name="welcomeUser2">La configuración esta casi lista.
+        \n\nEstos son algunos ajustes que pueden interesarte configurar antes de terminar.
+        \n\nSi lo deseas luego puedes cambiar toda la configuración en los ajustes.
+        \n\n Disfrútalo !!!</string>
+    <string name="download_mode">Descargar solo</string>
+    <string-array name="download_modes">
+        <item>Descarga limitada por la ultima conexión</item>
+        <item>Descarga limitada por una fecha</item>
+        <item>Descarga limitada por número de días</item>
+        <item>Descarga limitada por número de correos</item>
+    </string-array>
+    <!--<string name="download_modes0">Descarga limitada por la ultima conexión</string>-->
+    <!--<string name="download_modes1">Descarga limitada por una fecha</string>-->
+    <!--<string name="download_modes2">Descarga limitada por número de días</string>-->
+    <!--<string name="download_modes3">Descarga limitada por número de correos</string>-->
+    <string name="finish">Terminar</string>
+    <string name="get_cant_days">Inserte número de días</string>
+    <string name="get_cant_mails">Inserte número de correos</string>
+    <string name="get_date">Seleccione una fecha</string>
+    <string name="will_download">Descargará los correos llegados luego de la última conexión</string>
+    <string name="bubble_lines_limited_text">Limitar tamaño de burbujas</string>
+    <string name="bubble_lines_limited_suffix">líneas por mensajes</string>
+    <string name="lines">líneas</string>
+    <string name="mails">correos</string>
+    <string name="marck_as_read_after_download_explain">Previene descargas desde otros clientes de correos</string>
+    <string name="marck_as_read_after_download">Marcar como leído los descargados</string>
+    <string name="get_name">Escribe tu nombre</string>
+    <string name="get_cant_lines">Establezca número de líneas a mostrar</string>
+    <string name="title_cellphone_number">Número de teléfono</string>
+    <string name="title_cellphone_number_details">Es necesario para la activación de tu versión PREMIUN</string>
+    <string name="get_download_mode">Seleccione modo de descarga</string>
+    <string name="get_number">Inserte su número de teléfono</string>
+    <string name="title_auto_delete">Descarga y borra</string>
+    <string name="it_will_del_from_server">Serán eliminados permanentemente del servidor luego de la descarga y mantiene una copia en el dispositivo.</string>
+    <string name="need_permision">Debe habilitar los permisos</string>
+    <string name="err_set_recipent">Por favor inserte destino</string>
+    <string name="title_signature">Firma para mensajes</string>
+    <string name="get_signature">Inserte firma</string>
+    <string name="action_changes">Historial de cambios</string>
+    <string name="warning">Atención</string>
+    <string name="to">Para:</string>
+    <string name="action_copy">Copiar texto</string>
+    <string name="action_attach">Archivo</string>
+
+    <string-array name="inConmingServersListText">
+        <item>Imap</item>
+        <item>Pop3</item>
+    </string-array>
+    <string-array name="inConmingServersListValues">
+        <item>imap</item>
+        <item>pop3</item>
+    </string-array>
+    <string name="countInfo" translatable="false">$U$/$T$</string>
+    <string name="get_name_explain">Escribe como quieres que te reconozcan tus amigos. Esto se añadirá al inicio de tu dirección de correo y les ayudará a identificarte cuando les escribas.</string>
+    <string name="get_mail_explain">Escribe el correo con que deseas registrar en la aplicación. Este correo debes haberlo creado con anterioridad en un servidor de correos.</string>
+    <string name="get_pass_explain">Texto prestablecido por ti para iniciar sesión en tu servidor de correos. Es posible que contenga letras mayúsculas y minúsculas, números y signos.</string>
+    <string name="password">Contraseña</string>
+    <string name="settings_end">Configuración terminada.</string>
+    <string name="user">Usuario</string>
+    <string name="wait">Espera un momento</string>
+    <string name="asking_manual_settings">Deseas establecer manualmente los ajustes?</string>
+    <string name="asking_forced_settings">Deseas continuar sin verificar los ajustes?</string>
+    <string name="hi">Hola</string>
+    <string name="action_upgrade">Buscar versión actual</string>
+    <string name="syncOnOpen">Sincronizar al abrir</string>
+    <string name="syncOnOpenText">Sincronizara al abrir la aplicación</string>
+    <string name="me">mi</string>
+    <string name="gruop_socials">Agrupar correos de redes sociales</string>
+    <string name="group_socials_details">Agrupará y asignará nombres a diferentes remitentes</string>
+    <string name="restore">Restaurar</string>
+    <string name="proCodeText">Código para versión de premio</string>
+    <string name="proCode_details">Código de 4 dígitos decimales recibidos en un SMS</string>
+    <string name="request">Solicitar</string>
+    <string name="proNeeded">Necesita activar las funciones de premio.\n Deseas hacer una contribución y así solicitarla al desarrollador?</string>
+    <string name="get_app_pass_explain">Escribe tu contraseña para acceder a la aplicación</string>
+    <string name="syncOnComeBack">Sincronizar al volver a la lista principal</string>
+    <string name="syncOnComeBackText">Sincronizará al regresar a la lista de personas</string>
+    <string name="mail">Correo</string>
+    <string name="passwordProtection">Protección de contraseña</string>
+    <string name="passProtectionDetrails">Solicitará una contraseña para acceder</string>
+    <string name="pass_not_match">Las contraseñas no coinciden</string>
+    <string name="pass_not_correct">La contraseña no es correcta</string>
+    <string name="oldPass">Contraseña anterior</string>
+    <string name="newPass">Nueva contraseña</string>
+    <string name="confirmPass">Confirmar</string>
+    <string name="passEstablished">Contraseña establecida</string>
+    <string name="pass_disabled">Protección por contraseña desactivado</string>
+    <string name="restaing_apply_changes">Reiniciando para aplicar cambios</string>
+    <string name="wrong_activation_code">Este código no es correcto</string>
+    <string name="pref_header_reports">Avanzado</string>
+    <string name="send_reports">Enviar reportes de errores</string>
+    <string name="promt_send_report">Desea enviar el reporte ahora?</string>
+    <string name="no_report_to_send">No hay reportes que enviar por ahora</string>
+    <string name="check_for_updates">Comprobar actualizaciones</string>
+    <string name="reports_details">Recopilará información no privada de la ocurrencia de errores y usos de la aplicación.</string>
+    <string name="withOutSubject"><![CDATA[<Sin asunto>]]></string>
+    <string name="received">Recibido</string>
+    <string name="pending">Envío pendiente</string>
+    <string name="draft">Borrador</string>
+    <string name="sended">Enviado</string>
+    <string name="draft_deleted">Borrador desechado</string>
+    <string name="conecting_inHost">Conectando con el servidor de entrada</string>
+    <string name="locating_new_mails">Localizando mensajes nuevos</string>
+    <string name="downloading">"Descargando "</string>
+    <string name="of">" de "</string>
+    <string name="deleting_mails_from_server">Purgando correos eliminados del servidor</string>
+    <string name="contiecting_to_send">Conectando con el servidor de salida</string>
+    <string name="now">Ahora mismo</string>
+    <string name="promp_invalid_mails_error">Existen direcciones de correos invalidas. Por favor verifique los marcados con error antes de continuar.</string>
+    <string name="edit_reciver">Editar destinatario</string>
+    <string name="receiver_edited">Destinatario cambiado</string>
+    <string name="error_email_too_big">El tamaño del correo es muy grade</string>
+    <string name="promp_mails_too_big">Existen correos muy grades para ser enviados. Por favor verifique los marcados con error antes de continuar.</string>
+    <string name="copy_reciver">Copiar destinatario</string>
+    <string name="configure">Configurar acción al presionar</string>
+    <string name="add_widget">Adicionar</string>
+    <string name="askError">Se ha detectado que ocurrió un error fatal en la ejecución anterior de la aplicación.\n Desea enviar el reporte de error para ayudar a corregir en futuras versiones?</string>
+    <string name="insert_manual">Insertar manualmente</string>
+    <string name="pro_mode_activating">"Activado funciones de premio. "</string>
+    <string name="maintenance">Mantenimiento</string>
+    <string name="check_updates_explain">Comprobar a cada inicio de la aplicación si existe una versión más moderna. Es necesario conexión a internet</string>
+    <string name="db_clean">Limpiar base de datos</string>
+    <string name="db_clean_explain">Liberará algo de espacio en el almacenamiento interno del teléfono, pero no borrará los mensajes del servidor.\n Importante para móviles de poco almacenamiento.</string>
+    <string name="purge">Purgar</string>
+    <string name="clean_db_promp">"Va a vaciar la base de datos de los correos almacenados en el teléfono.\n"
+                                  "Desea eliminar también los archivos adjuntos descargados?\n"
+                                  "Estos archivos no serán necesarios para el funcionamiento de la aplicación."</string>
+    <string name="error_file_not_found">Archivo no encontrado</string>
+    <string name="sound_ambient">Reproducir sonidos para:</string>
+    <string name="sound_ambient_explain">Seleccione las acciones deseadas</string>
+    <string name="on_sync_failed">Sincronización fallida</string>
+    <string name="on_sync_failed_eplain">Al ocurrir errores al sincronizar</string>
+    <string name="on_purge_from_server">Purgar del servidor</string>
+    <string name="on_purge_from_server_eplain">Al eliminar correos del servidor</string>
+    <string name="on_sync_done">Sincronización exitosa</string>
+    <string name="on_sync_done_eplain">Al sincronizar correctamente</string>
+    <string name="on_delete_mail">Eliminar correos</string>
+    <string name="on_delete_mail_eplain">Al eliminar mensajes o conversaciones enteras</string>
+    <string name="on_error_to_send">Error al enviar</string>
+    <string name="on_error_to_send_eplain">Al ocurrir un error en el envío</string>
+    <string name="on_send_done">Envio exitoso</string>
+    <string name="on_send_done_eplain">Al enviar exitosamente</string>
+    <string name="sound_new_mail">Correo nuevo</string>
+    <string name="sound_new_mail_explain">Al recibir correos nuevos</string>
+    <string name="promp_file_not_found">Existen archivos adjuntos faltantes. Por favor verifique los marcados con error antes de continuar.</string>
+    <string name="sync_frec_explain">Seleccione frecuencia con la que desea que la aplicación sincronice</string>
+    <string name="auto_sync_disabled">Sincronización automática desactivada</string>
+    <string name="auto_sync_enabled">Actualización automática activada</string>
+    <string name="disable">Desactivar</string>
+    <string name="every">"Cada "</string>
+
+    <string name="newMails">Correos nuevos</string>
+    <string name="newMailExplain">Tiene correos nuevos descargados. Toque aquí para abrir</string>
+    <string name="newMailProm">Mostrar notificaciones para correos nuevos</string>
+    <string name="newMailDetails">Notificar al descargar nuevos correos que se encuentren sin leer</string>
+
+    <string name="notify_public_mode">Notificar en modo público</string>
+    <string name="notify_public_mode_details">Mostrar información de los correos sin leer</string>
+    <string name="new_unRead">Total nuevos sin leer:</string>
+
+    <string name="update_path" translatable="false">https://goo.gl/zimwPD</string><!--rel-->
+    <string name="update_path_dev" translatable="false">https://goo.gl/1BNGTF</string>
+
+    <string name="num_trys_sync">Número de intentos de conexión</string>
+    <string name="promp_num_try_sync">Inserte Número de veces a tratar de conectar con el servidor</string>
+    <string name="sync_trys_plantilla">%1$s intentos</string>
+
+    <string name="pref_personal_data_text">Información general suministrada por el usuario</string>
+    <string name="pref_servers_config_text">Ajustes para la conexión con los servidores</string>
+    <string name="pref_notification_text">Elegir entre las notificaciones de sonido y visuales</string>
+    <string name="pref_sync_text">Opciones de recibo de correos y adjuntos</string>
+    <string name="pref_theme_text">Cambiar opciones de visualización de la aplicación</string>
+    <string name="pref_dev_text">Herramientas de mantenimiento e informe de errores</string>
+
+    <string name="promp_phone_text">Por favor inserte su número de teléfono</string>
+    <string name="promp_pin"><![CDATA[Inserte pin: <ej: 1234>]]></string>
+    <string name="promp_amount"><![CDATA[Cantidad a transferir: <ej: 2 min:1>]]></string>
+    <string name="error_prosessing_request">"No se pudo procesar la solicitud.  "</string>
+    <string name="error_makeing_donation">Error haciendo la donación</string>
+    <string name="pref_header_sending">Envío</string>
+    <string name="max_size_explain">Seleccione tamaño máximo</string>
+    <string name="automatic_send_pref_title">Envío instantáneo </string>
+    <string name="automatic_send_pref_explain">Ejecutar envío instantáneo del correo y no esperar a la sincronización</string>
+    <string name="actual_setting_is">"El ajuste actual es: "</string>
+    <string name="auto_reduce_images_disabled">Autorreducción de imágenes desactivada</string>
+    <string name="auto_reduce_images_enabled">Autorreducción de imágenes activada</string>
+    <string name="loading">…Cargando…</string>
+    <string name="setVIP">Favorito/Bloquear</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="important">Favorito</string>
+    <string name="ignored">Bloqueado</string>
+    <string name="normal">Normal</string>
+    <string name="sett_show_ignored_text">Mostrar contactos ignorados</string>
+    <string name="sett_show_ignored_explain">Mostrará los contactos ignorados al final de la lista</string>
+    <string name="select_importance_level_promp">Selecciona el nivel de importancia de esta persona</string>
+    <string name="sett_background_sync_datails">Ejecutará el servicio para la sincronización mientras la aplicación se encuentre cerrada</string>
+    <string name="sett_backgound_sync_text">Sincronizar en segundo plano</string>
+    <string name="sett_download_ignored_text">Descargar contactos ignorados</string>
+    <string name="sett_download_ignored_details">Si está marcado descargará los correos de los contactos marcados para ignorar, de lo contrario no serán descargados.\n Si la opción de \"Descarga y borra\" esta activada los ignorados no descargados serán borrados del servidor</string>
+    <string name="select_contacts_shape_promp">Selecciona la forma en que deseas visualizar las fotos de los contactos</string>
+    <string name="sett_selected_contacts_shape">Las fotos se visualizarán en forma de %1$s</string>
+    <string name="sett_contact_shape">Forma de foto de los contactos</string>
+    <string name="pref_header_sending_details">Opciones de envío</string>
+    <string name="sett_contacts_bubble_shape">Forma de las burbujas de mensajes</string>
+    <string-array name="pref_data_size_titles">
+        <item>Byte</item>
+        <item>KB</item>
+        <item>MB</item>
+        <item>GB</item>
+        <item>TB</item>
+    </string-array>
+
+    <string-array name="pref_contacts_shapes_titles">
+        <item>Círculo</item>
+        <item>Squircle</item>
+        <item>Cuadrado redondeado</item>
+        <item>Cuadrado</item>
+        <item>Globos</item>
+        <item>Gota</item>
+        <item>Corazón</item>
+        <item>Ataúd</item>
+    </string-array>
+
+
+    <string-array name="pref_bubble_shapes_titles">
+        <item>Globos</item>
+        <item>Dialogo cuadrado</item>
+        <item>Rectángulo</item>
+        <item>Suspiro</item>
+        <item>retro Telegram</item>
+        <item>retro iMessaje</item>
+    </string-array>
+
+    <string name="select_bubble_shape_promp">Selecciona la forma en que deseas visualizar las burbujas de conversaciones</string>
+    <string name="sett_selected_bubble_shape">Las conversaciones se visualizarán en forma de %1$s</string>
+    <string name="mail_view_text_test">Hola. ¿cómo estás?</string>
+    <string name="action_speech">Leer texto</string>
+    <string name="sending">"Enviando %1$o restantes"</string>
+    <string name="generated">Su código de %1$s es: %2$s.\n Gracias por contribuir con el proyecto. \ Reinicie la aplicación para aplicar los cambios</string>
+    <string name="tacanno">El mínimo para activar las funciones de premio, es 1 cuc. \n Por favor sea más bondadoso con el proyecto.</string>
+    <string name="did_you_know_that">… con tu donación contribuyes al desarrollo de este proyecto. Anímate y se patrocinador de este producto. \n\nEquipo de SanMail</string>
+    <string name="did_you_know">Sabías que …</string>
+    <string name="reindex_promp">Desea reordenar los datos?</string>
+    <string name="restart_to_end">Reinicie la aplicación para terminar el proceso</string>
+    <string name="need_user_pass">Requiere usuario y contraseña</string>
+    <string name="aceptar_certificados_desconocidos">Aceptar certificados desconocidos</string>
+    <string name="sellect_kind_security">Seleccione tipo de seguridad</string>
+    <string name="error_server_no_login_supported">Tipo de inicio de sesión no soportado</string>
+    <string name="error_server_cert_invalid">Certificado de conexión no es válido. Active la opción "Confiar en certificados desconocidos".</string>
+    <string name="remove">Quitar</string>
+    <string name="no_se">No se</string>
+    <string name="unrooted">No se obtuvieron los permisos para ejecutar como root</string>
+    <string name="get_root_help">Si su dispositivo está rooteado aparecerá un dialogo preguntando si desea permitir esta acción.\n Recuerda mantener estos para que funcione correctamente</string>
+    <string name="get_root_permision">"Para realizar esta acción se necesitan permisos root.\n Si tu dispositivo está rooteado selecciona \"Si\" y mantén estos permisos para que esta función correctamente"</string>
+    <string name="getionar_conexiones">Gestionar conexiones</string>
+    <string name="mobile_data">Datos móviles</string>
+    <string name="mobile_data_datails">De ser necesario habilitará la conexión de datos móviles.\n Esto puede generar gastos adicionales</string>
+    <string name="wifi">Wifi</string>
+    <string name="wifi_details">De ser necesario habilitará la conexión de Wifi</string>
+    <string name="sync">Sincronización</string>
+    <string name="sett_net_change_sync_details">Sincronizará al existir un cambio en las conexiones del dispositivo</string>
+    <string name="sett_net_change_sync">Sincronizar al cambiar el estado de conexión</string>
+    <string name="cleaning_mail_from_server_development">ATENCIÓN: Esto puede crear algunos costes por consumo de datos móviles.\n Asegúrese de tener conexión con los servidores antes de ejecutar esta acción</string>
+    <string name="ejecutando_acciones">Ejecutando acciones, Por favor espere</string>
+    <string name="i">Yo</string>
+    <string name="main_list">Lista Principal</string>
+    <string name="conversations">Conversaciones</string>
+    <string name="general">General</string>
+    <string name="sett_me_as_me">Usar pronombre personal Yo</string>
+    <string name="sett_me_as_me_details">Usar pronombre para las apariciones de mi nombre en los remitentes y destinatarios</string>
+    <string name="ask_delete_selected">Desea eliminar los %1$s correo(s) seleccionado(s)?</string>
+    <plurals name="ask_delete_selected_persons">
+        <item quantity="one">Desea eliminar la conversación seleccionada?</item>
+        <item quantity="other">Desea eliminar las %1$s conversaciones seleccionadas?</item>
+    </plurals>
+    <string name="slogan">Un cliente de correos pensado en ti</string>
+    <string name="selected">Seleccionado(s) %1$s</string>
+
+
+    <string-array name="security">
+        <item>Ninguno</item>
+        <item>SSL/TLS</item>
+        <item>STARTTLS</item>
+    </string-array>
+    <string-array name="securityValues">
+        <item>none</item>
+        <item>ssl/tls</item>
+        <item>starttls</item>
+    </string-array>
+
+
+    <string-array name="spiner_selector">
+        <item>Seleccionar</item>
+        <item>Todos</item>
+        <item>Ninguno</item>
+    </string-array>
+
+    <string name="lema">Un cliente de correos pensado en ti y para ti. ¡Sí! Para ti.</string>
+
+    <string name="activate_pro_notification_title">Activa las funciones de premio</string>
+
+    <string name="activate_pro_notification_placeholder_text">Sabías que con la activación de
+        las funciones de premio del SanMail puedes personalizar más los ajustes para que se ajusten más a tus necesidades y gustos. </string>
+    <string name="activate_pro_notification_placeholder_such_as">Entre ellos puedes: %1$s </string>
+    <string name="acept">Aceptar</string>
+
+    <string-array name="pro_tips">
+        <item>Cambiar la firma para los mensajes</item>
+        <item>Establecer una contraseña para abrir la aplicación</item>
+        <item>Cambiar la frecuencia de comprobación automática de correos nuevos</item>
+        <item>Activar la comprobación automática al existir un cambio en las conexiones</item>
+        <item>Activar la conexión de Datos móviles al realizarse una sincronización</item>
+        <item>Cambiar el tamaño máximo para la reducción de imágenes para enviar</item>
+        <item>Deshabilitar la notificación pública a la hora de notificar correos nuevos</item>
+        <item>Eliminar del servidor todos los correos sin necesidad de descargarlos</item>
+    </string-array>
+
+
+    <string name="upgrade_avalible">Existe una actualización para la aplicación. \n Deseas descargarla?</string>
+    <string name="running">en ejecución</string>
+    <string name="launcher_changes">Es posible que necesite reiniciar su Launcher o dispositivo para terminar de aplicar los cambios</string>
+    <string name="pro_activate">Activar Premio</string>
+    <string name="acceso_a_la_aplicaci_n">Acceso a la aplicación</string>
+    <string name="crea_un_acceso_para_abrir_la_aplicaci_n">Crea un acceso para abrir la aplicación</string>
+    <string name="acci_n_para_sincronizar">Acción para sincronizar</string>
+    <string name="crea_un_acceso_para_ejecutar_la_sincronizaci_n_bajo_demanda">Crea un acceso para ejecutar la sincronización bajo demanda</string>
+    <string name="acci_n_para_redactar">Acción para redactar</string>
+    <string name="crea_un_acceso_para_abrir_la_pantalla_de_redacci_n_de_un_nuevo_correo">Crea un acceso para abrir la pantalla de redacción de un nuevo correo</string>
+    <string name="sett_keep_cxn_on">Mantener conectado imap</string>
+    <string name="sett_keep_cxn_on_details">Habilitar para mantener una comunicación fluida, como con mensajería instantánea</string>
+    <string name="adicionar_a_los_contactos_r_pidos">Adicionar a los frecuentes</string>
+    <string name="must_add_to_contacts">Primero debes agregarlo a tus contactos</string>
+    <string name="behaiviour">Comportamiento</string>
+    <string name="couldnt_finf_file">No se pudo encontrar el archivo</string>
+    <string name="getting_ready_file">Preparando archivo</string>
+    <string name="activating_imap_idle_warning">Con esta acción puede incurrir en gastos por datos móviles al activarla.\n Se recomienda para los que revisan el correo en un intervalo menor a 15 minutos o se conectan por Wifi</string>
+    <string name="sett_keep_just_on_open">Mantener solo al abrir</string>
+    <string name="sett_keep_just_on_open_details">Al salir de la aplicación cerrará la conexión establecida del IMAP-IDLE</string>
+    <string name="sett_show_sended_mark">Mostrar marca de enviado</string>
+    <string name="sett_show_sended_mark_details">Mostrará una marca para identificar los correos ya enviados</string>
+    <string name="sett_show_draft_mark">Mostrar marca de borrador</string>
+    <string name="sett_show_draft_mark_details">Mostrará una marca para identificar los borradores en la conversación</string>
+    <string name="sett_show_outbox_mark_details">Mostrará una marca para identificar los correos por enviar</string>
+    <string name="sett_show_outbox_mark">Mostrar marca de por enviar</string>
+    <string name="restart">Reiniciar</string>
+    <string name="sett_keep_on_notif">Mostrar notificación para segundo plano</string>
+    <string name="sett_keep_on_notif_details">Mostrar una notificación para mantener el servicio ejecutado.\n Se recomienda activar para el correcto funcionamiento</string>
+    <string name="sett_icon_to_sync">Icono para actualizar</string>
+    <string name="sett_icon_to_sync_details">Mostrar ícono para ejecutar la actualización inmediata en la lista de aplicaciones.</string>
+    <string name="sett_icon_to_compose">Icono para redactar</string>
+    <string name="sett_icon_to_compose_details">Mostrar ícono para redactar un nuevo correo en la lista de aplicaciones</string>
+    <string name="number_of_conections_error">Excedida la cantidad de conexiones al servidor.\n Pruebe reiniciar las conexiones y vuelva a intentar la sincronización</string>
+    <string name="allways">Siempre</string>
+    <string name="inform_contacts">Recuerda que  es necesario notificar tu correo y número si deseas recibir tu código de activación al donar al Equipo de SanMail.\n Sin ello no será posible determinar tu código para la activación.</string>
+    <string name="by_email">Por correo</string>
+    <string name="by_SMS">Por SMS</string>
+    <string name="terms_title">Términos de Uso</string>
+    <string name="no_acord_terms">Si no está de acuerdo … </string>
+    <string name="set_get_news">Recibir noticias</string>
+    <string name="set_get_news_details">Recibirá las noticias publicadas el sitio de SanMail</string>
+    <string name="set_header_noticias">Noticias</string>
+    <string name="set_recibe_comments">Recibir comentarios</string>
+    <string name="set_recibe_comments_details">Descargará en la sección de noticias los comentarios realizados en el sitio</string>
+    <string name="action_links">Vínculos</string>
+    <string name="action_expand">Expandir</string>
+    <string name="action_colapce">Contraer</string>
+    <string name="sett_mail_touch_action_details">Activo Expande/Contrae. Inactivo Muestra menú para los vínculos</string>
+    <string name="sett_mail_touch_action">Expandir cuando toque el correo</string>
+    <string name="links_on_mail">Seleccione el vínculo</string>
+    <string name="action_inform">Notificar datos</string>
+    <string name="action_users_kind">Tipos de Usuarios</string>
+    <string name="term_acepted">He leído y aceptado los términos de uso</string>
+    <string name="goo">ir</string>
+    <string name="task_executing">La tarea se encuentra en proceso.  Espere por favor.</string>
+    <string name="task_done">Ejecutado sin problemas</string>
+    <string name="task_failed">Ocurrieron errores en el proceso</string>
+    <string name="record_audio_first">Por favor primero graba el audio y luego adjúntalo. Normalmente está en la carpeta “Recording” o “Sound” de tu SDCard</string>
+    <string name="audio_recorder_not_found">Lo sentimos, no encontramos aplicación para realizar esta acción. Por favor selecciónalo desde la lista</string>
+    <string name="catching_over_memory_error">Hemos tomado deshabilitado la animación de los Stickers para evitar el error que hiso que anteriormente se detuviese la aplicación</string>
+    <string name="activating_connection">Activando conexiones</string>
+    <string name="starting_sync">Comprobando conexiones</string>
+    <string name="select_ringtone">Seleccione tono de notificación</string>
+    <string name="restar_app">Reiniciando para termina el proceso. Si no se reinicia la aplicación, por favor haslo tu mismo</string>
+    <string name="fetching_news">Buscando noticias</string>
+    <string name="select_sound_recorder">Seleccione Grabador de Sonidos</string>
+    <string name="sett_encript_body_message">Encriptar cuerpo del mensaje</string>
+    <string name="sett_encript_body_mess_deta">Solo será posible leerlo si lo reciben con SanMail</string>
+    <string name="sett_auto_delete_details">Borrar los correos luego de descargarlos del servidor</string>
+    <string name="wait_for">Esperar %1$s %2$s</string>
+    <string name="sett_time_to_wait_after_activete_net">Tiempo de espera para conectar al activar datos móbiles o wifi</string>
+    <string name="det_added_error_report_to_db">Se ha adicionado el envio del correo para la próxima sincronización</string>
+    <string name="det_touch_ok_to_send">Cuando esté dispuesto a enviar el reporte, simplemente envíelo. Gracias</string>
+    <string name="attach_img">Imagen</string>
+    <string name="take_attach_img">Cámara</string>
+    <string name="attach_video">Video</string>
+    <string name="record_attach_video">Cámara</string>
+    <string name="attach_sound">Sonido</string>
+    <string name="record_attach_sound">Grabar</string>
+    <string name="attach_contact">Contacto</string>
+    <string name="open_contact_picker_to_start_to_write">Seleccionar contacto a escribir al comenzar una conversación nueva</string>
+    <string name="open_contact_picker_to_start_to_write_title">Seleccionar contacto</string>
+    <string name="sett_sound_recorder">Grabador de sonido</string>
+    <string name="sett_sound_recorder_det">Establecer aplicación para la grabación de sonidos</string>
+    <string name="sett_choose_font_type">Elije tipo de letra</string>
+    <string name="error_host_refused_cnx">El servidor remoto a rechazado la conexión</string>
+    <string name="read_report">Leído</string>
+    <string name="read_report_body">Su mensaje a %1$s con asunto %2$s fue leído</string>
+    <string name="sett_request_deliver_notif">Solicitar aviso de entrega</string>
+    <string name="sett_request_deliver_notif_det">Marcará todos los correos para recibir confirmación de entrega\nPuede generar gastos adicionales</string>
+    <string name="sett_request_read_notif">Solicitar aviso de lectura</string>
+    <string name="sett_request_read_notif_det">Marcará todos los correos para recibir confirmación de lectura\nPuede generar gastos adicionales</string>
+    <string name="sett_send_read_notif">Enviar confirmación de lectura</string>
+    <string name="sett_send_read_notif_det">Enviará un correo informando que has leído uno el cual tenga esta solicitud\nPuede generar gastos adicionales</string>
+    <string name="modo_mensajer_a_instantanea">Modo mensajería instantanea</string>
+    <string name="saving_file_in">Guardando archivo en: %1$s</string>
+    <string name="file_saved_in">Archivo guardado en: %1$s</string>
+    <string name="attechments_details">Nombre: %1$s \n\nTamaño: %2$s</string>
+    <string name="mail_details">Fecha: %1$s \n\nAsunto: %2$s \n\nEstado: %3$s</string>
+    <string name="delivered">Entregado</string>
+    <string name="readed">Leído</string>
+    <string name="action_hide_quotes">Ocultar texto citado</string>
+    <string name="sett_send_close">Enviar y cerrar</string>
+    <string name="sett_send_close_det">Al enviar un correo cierra la pantalla de la conversación.</string>
+    <string name="fron_launcher">Desde el icono</string>
+    <string name="from">De %1$s</string>
+    <string name="clear">Nunca</string>
+    <string name="add_to_send_and_close">Adicionar a enviar y terminar</string>
+    <string name="sett_stop_sound_det">Detener la reproducción de sonidos adjuntos mostrar otra pantalla</string>
+    <string name="sett_stop_sound">Detener reproducción de sonidos adjuntos</string>
+    <string name="attention_disable_component">Deshabilitar esta opción puede generalr mal funcionamiento.\n ¿Aún desea deshabilitar este componente?</string>
+    <string name="finger_print_missing_error">Primero debes registrar al menos una huella en los ajustes del sistema</string>
+    <string name="finger_print_auth_error">No se reconoce la huella</string>
+    <string name="sett_fingerr_print_det">Permite el uso de huellas dactilares para acceder a la aplicación\nEs necesario que tengas registrada al menos una huella dactilar y tengas habilitado el bloqueo de la pantalla en los ajustes del sistema.</string>
+    <string name="sett_fingerr_print">Activar acceso con huella</string>
+    <string name="sett_change_font">Cambiar fuente</string>
+    <string name="sett_select_color_teme">Selecciona tema de colores</string>
+    <string name="sett_security_paranoic">Seguridad paranoica</string>
+    <string name="sett_security_paranoic_det">Solicita la contraseña de acceso al cambiar de aplicación por 3 segundos</string>
+    <string name="finger_print_out_error">No se reconoció el dispositivo de lector de huellas</string>
+    <string name="attachFileName">%1$s: %2$s</string>
+    <string name="downloadAttach">¿Desea descargar %2$s con el archivo \"%1$s\"?</string>
+    <string name="downloading_file">Descargando archivo %1$s</string>
+    <string name="sett_change_icon_theme">Cambiar el icono con el tema</string>
+    <string name="more_changes_in">Más cambios en \n https://sanmail.app/changelog</string>
+    <string name="sett_multi_notif">Mostrar múltiples notificaciones</string>
+    <string name="sett_multi_notif_det">Deshabilitar para evitar demasiadas notificaciones en el sistema</string>
+    <string name="new_on_version">Cambio en esta versión\n %1$s </string>
+    <string name="view_all">Ver todos</string>
+    <string name="add_from_file">Agregar desde archivo</string>
+    <string name="download">Descargar</string>
+    <string name="sett_draft_mode">Modo borrador único</string>
+    <string name="sett_draft_mode_det">Al activar inhabilita la posibilidad de tener múltiples borradores en una misma conversación</string>
+    <string name="err_file_not_reconized">No se reconoce el formato del archivo</string>
+    <string name="err_remote_file_not_found">No se ha encontrado el archivo remoto.  Puede ser que hayan borrado el correo desde otro cliente</string>
+    <string name="share">Compartir</string>
+    <string name="action_abrir">Abrir</string>
+	
+	<!-- hasta aqui ya haias traducido-->
+
+    <string name="sett_get_only_sanmail">Descargar solo los enviados con SanMail</string>
+    <string name="sett_get_only_sanmail_details">Si lo desactivas no recibirás correos que no sean enviados con SanMail</string>
+    <string name="checking">Comprobando %1$s de %2$s correos</string>
+    <string name="downloading_mail">Descargando %1$s de %2$s correos</string>
+    <string name="encryption">Encriptación</string>
+    <string name="err_sync">Error conectando</string>
+    <string name="download_from_date">Descargar desde</string>
+    <string name="account_type" translatable="false">org.santech.sanjuan.sanmail</string>
+    <string name="authority" translatable="false">org.santech.sanjuan.sanmail.provider</string>
+    <string name="insert_manually">Otro correo</string>
+    <string name="err_invalid_host">Servidor no válido</string>
+    <string name="err_invalid_port">Puerto no válido</string>
+    <string name="error_invalid_user">Usuario no válido</string>
+    <string name="err_auth">Verifica tu usuario y contraseña</string>
+    <!--<string name="err_host_not_found">No se pudo conectar con el servidor %1$s</string>-->
+    <string name="err_no_such_provider">Este servidor no provee el servicio por este protocolo</string>
+    <string name="err_cert_invalid">El certificado no es válido.</string>
+    <string name="err_def_config_not_foud">No se pudo obtener una configuración para tu tipo de cuenta %1$s</string>
+    <string name="err_def_config_not_checked">No se pudo comprobar la configuración predeterminada. ¿Deseas guardar y continuar con estos ajustes? </string>
+    <string name="err_config_not_checked">No se pudo comprobar la configuración. %1$s</string>
+    <string name="do_you_want_continue_manually">¿Deseas continuar realizando los ajustes manuales?</string>
+    <string name="action_manage_accounts">Administrar cuentas</string>
+    <string name="action_add_account">Adicionar cuenta</string>
+    <string name="sett_account_manage_details">Gestionar cuentas y su configuración</string>
+    <string name="account_name">Nombre de la cuenta</string>
+    <string name="error_allready_configured">Este correo ya se encuentra configurado en la aplicación</string>
+    <string name="sett_add_account_det">Configurar una nueva cuenta de correo</string>
+    <string name="keep">Mantener</string>
+    <string name="change">Cambiar</string>
+    <string name="askPop">El protocolo POP carece de algunas funcionalidades importantes para el correcto funcionamiento de SanMail.\n¡Si tu servidor lo soporta recomendamos el uso de IMAP!\n" ¿Quieres cambiar a IMAP o mantener POP?"</string>
+    <string name="navigation_drawer_open">Abrir panel de navegación </string>
+    <string name="navigation_drawer_close">Cerrar panel de navegación</string>
+    <string name="conecting_host">Conectando con el servidor</string>
+    <string name="sett_account_website">http://sanmail.app</string>
+    <string name="noticias">Noticias</string>
+    <string name="updating_database">Estamos actualizando la base de datos.  Esto puede tomar algún tiempo</string>
+    <string name="cerrar_panel_aplicaci_n">Cerrar panel/aplicación</string>
+    <string name="account_news_name">Noticias</string>
+    <string name="version">Versión %1$s (%2$s)</string>
+    <string name="sett_device_account_settings_det">Abre la pantalla de ajustes de cuentas del dispositivo</string>
+    <string name="sett_device_account_settings">Ajustes de cuentas del dispositivo</string>
+    <string name="action_remove_account">Quitar cuenta</string>
+    <string name="lbl_actions">Acciones</string>
+    <string name="pref_sync">Sincronización</string>
+    <string name="pref_sync_details">Opciones de sincronización automatizada</string>
+    <string name="general_det">Ajustes generales</string>
+    <string name="action_delete_account_det">Remover cuenta del dispositivo</string>
+    <string name="action_edit_account_det">Inicia el asistente para la configuración de la cuenta</string>
+    <string name="pref_servers_config">Cuenta y servidores</string>
+    <string name="ask_remove_account">¿Deseas quitar la configuración de la cuenta ?</string>
+    <string name="mail_view_text_test2">Yo bien y tu ¿Cómo estás?</string>
+    <string name="sett_change_theme_color">Cambiar tema de colores</string>
+    <string name="sett_change_theme_color_det">Elegir los colores de la aplicación e iconos</string>
+    <string name="select_when_activate_night_mode">Seleccione modo de activación del modo noche</string>
+    <string name="to1">Anochece:</string>
+    <string name="from1">Amanece:</string>
+    <string name="seleccione_horario_q_desea_mantener_el_modo_noche">Seleccione horario q desea mantener el modo noche</string>
+    <string name="day_time">Horario día:</string>
+    <string name="account_name_details">Nombre para identificar tu cuenta de correo</string>
+    <string name="never">Nunca</string>
+    <string name="no_app_for_this_action_select_one">No existen aplicaciones disponibles para este tipo de acción. Por favor instala una</string>
+    <string name="error_opening_file">Error abriendo. Abra manualmente el archivo\n%1$s</string>
+    <string name="default_account">Cuenta predeterminada</string>
+    <string name="select_sync_mode">Seleccione cuando sincronizar la cuenta</string>
+    <string name="select_imap_mode">Seleccione cuando mantener conectado el imap</string>
+    <string name="downloads">Descarga</string>
+    <string name="sett_auto_startup">Permitir inicio automático</string>
+    <string name="sett_auto_startup_det">Es necesario que SanMail esté habilitada en las \'Aplicaciones protegidas\' del sistema para que funcione correctamente</string>
+    <string name="sync_frec">Frecuencia de sincronización</string>
+    <string name="dont_show_agin">No mostrar de nuevo</string>
+    <string name="action_goto_settings">Ir a ajustes</string>
+    <string name="toast_locate_and_active">Encuentra la aplicación en las listas, activa el auto inicio y deshabilita la optimización de energía</string>
+    <string name="saveing_draft">Guardando borrador</string>
+    <string name="notification_service_channel_title">Sincronización</string>
+    <string name="notification_service_channel_det">Notificación para notificar el estado de la sincronización</string>
+    <string name="idle_connected">Chat conectado</string>
+    <string name="other">Otros</string>
+    <string name="mensajeria">Correo chat</string>
+    <string name="default_notification_channel_title">Mensajería de %1$s</string>
+    <string name="default_notification_channel_det">Notificaciones de correos nuevos</string>
+    <string name="sett_sync_notif">Notificación de sincronización</string>
+    <string name="sett_sync_notif_det">Notificar estado de la sincronización de la cuenta</string>
+    <string name="sett_sync_fail_notif">Notificación de sincronización fallida</string>
+    <string name="sett_sync_fail_notif_det">Notificar la sincronización falle por no poder conectar con el servidor</string>
+    <string name="seleccione_cuenta">Seleccione cuenta</string>
+    <string name="off_news">de noticias</string>
+    <string name="press_close_to_exit">Presione el botón de cerrar para salir</string>
+    <string name="fwd">FWD:RNV</string>
+    <string name="fwdS">Mensaje reenviado </string>
+    <string name="rep">RE</string>
+    <string name="repS"></string>
+    <string name="repply">Responder</string>
+    <string name="in_reply_to">Respondiendo al correo de %1$s con fecha %2$s con mid:%3$s</string>
+    <string name="sett_append_replied_messaje">Adjuntar mensaje respondido</string>
+    <string name="sett_append_replied_messaje_det">Adjunta al enviar el cuerpo del mensaje respondido para compatibiidad con clientes tradicionales</string>
+    <string name="sett_dark_mode_det">Elegir cuando habilitar el modo oscuro</string>
+    <string name="sett_dark_mode">Habilitar modo oscuro</string>
+
+    <string-array name="enabled_night_modes">
+        <item>Siempre</item>
+        <item>Sistema</item>
+        <item>Programado</item>
+        <item>Desactivado</item>
+    </string-array>
+    <string-array name="sync_modes">
+        <item>Siempre</item>
+        <item>Al abrir la aplicación</item>
+        <item>Nunca</item>
+    </string-array>
+
+	
